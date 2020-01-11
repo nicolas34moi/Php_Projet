@@ -1,13 +1,16 @@
 <html>
+<head>
+    <link rel="stylesheet" href="tableau.css">
+</head>
 <body>
-<link rel="stylesheet" href="tableau.css">
 
+<header>
+    <h1>Hôtel Neptune</h1>
+</header>
 
-<form action="" method="post">
+<form action="" method="post" id="Recherche">
     <label for="">Magasin : </label>
-    <select name="stor_id">
-        <option value=''>Tous</option>
-    </select>
+    <input type="text" name="noChambre" value="">
     <input type="submit" value="Rechercher" />
 </form>
 
@@ -21,11 +24,35 @@
     </thead>
     <tbody>
              <tr>
-                 <td>16</td>
+                 <td>12</td>
                  <td>11/01/2020</td>
                  <td>18/01/2020</td>
              </tr>
-
+             <tr>
+                 <td>9</td>
+                 <td>1/01/2020</td>
+                 <td>1/01/2020</td>
+             </tr>
+             <tr>
+                 <td>9</td>
+                 <td>1/01/2020</td>
+                 <td>1/01/2020</td>
+             </tr>
+             <tr>
+                 <td>9</td>
+                 <td>1/01/2020</td>
+                 <td>1/01/2020</td>
+             </tr>
+             <tr>
+                 <td>9</td>
+                 <td>1/01/2020</td>
+                 <td>1/01/2020</td>
+             </tr>
+             <tr>
+                 <td>9</td>
+                 <td>1/01/2020</td>
+                 <td>1/01/2020</td>
+             </tr>
 
     </tbody>
 </table>
