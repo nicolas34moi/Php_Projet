@@ -9,7 +9,7 @@
 </header>
 
 <form action="" method="post" id="Recherche">
-    <label for="">Magasin : </label>
+    <label for="">N° Chambre : </label>
     <input type="text" name="noChambre" value="">
     <input type="submit" value="Rechercher" />
 </form>

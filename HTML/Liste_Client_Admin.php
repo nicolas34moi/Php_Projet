@@ -10,8 +10,8 @@
 </header>
 
 <form action="" method="post" id="Recherche">
-    <label for="">Magasin : </label>
-    <input type="text" name="noChambre" value="">
+    <label for="nomClient">Nom Client : </label>
+    <input type="text" name="nomClient" value="">
     <input type="submit" value="Rechercher" />
 </form>
 

@@ -3,16 +3,12 @@
 
 class Personne
 {
-    private $nom = 'nomPersonne';
-    private $prenom = 'prenomPersonne';
-    private $numTel = '0606060606';
+    private $nom = '';
+    private $prenom = '';
+    private $numTel = '';
 
     function creerPersonne()
     {
-        echo '';
-
-
-
 
     }
 
