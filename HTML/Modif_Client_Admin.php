@@ -27,10 +27,10 @@
         <label for="tel">N° de Téléphone : </label>
         <input type="text" name="tel" value="">
         <br>
-        <input type="submit" value="Valider">
-
+        <button type="submit" class="btn btn-primary">Valider</button>
     </div>
 </form>
+
 </body>
 </html>
 
