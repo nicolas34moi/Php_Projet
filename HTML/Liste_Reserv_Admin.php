@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="tableau.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -19,10 +19,10 @@
     <h1>Hôtel Neptune</h1>
 </header>
 
-<form action="" method="post" id="Recherche">
+<form action="" method="post" class="form-group">
     <label for="">N° Chambre : </label>
     <input type="text" name="noChambre" value="">
-    <input type="submit" value="Rechercher"/>
+    <button type="submit" class="btn btn-primary">Rechercher</button>
 </form>
 
 <table  class="table table-striped">
@@ -68,6 +68,8 @@
     </tbody>
 </table>
 
-
+<footer>
+    <h1>Footer</h1>
+</footer>
 </body>
 </html>
