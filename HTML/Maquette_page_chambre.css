@@ -1,0 +1,115 @@
+body{
+  padding: 0;
+margin : 0;
+  background: grey;
+}
+.stickymain {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 70px;
+  top:0px;
+  z-index: 3;
+  background-color: #2d2d2d;
+}
+.sticky{
+  background-size:cover;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.mySlides{
+
+  width: 70%;
+}
+.backgrounddefilement1{
+width: 99%;
+
+  height: 500px;
+}
+.dot {
+  justify-content: center;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dotmain {
+  display: flex;
+  justify-content: center;
+}
+
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.vente{
+padding-top: 40px;
+padding-bottom: 40px;
+}
+#menu {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+background: #b3cccc;
+  text-align: center;
+  border-radius: 20px;
+
+}
+.reservation{
+  display: flex;
+justify-content: center;
+}
+.tarif_de_nuit{
+  background: #3d5c5c;
+  border-radius: 15px;
+}
+.tarif_de_nuit h1{
+color: white;
+  height: 10px;
+}
+.tarif_de_nuit p {
+  color: white;
+}
+
+.button{
+  align-self: center;
+  padding: 10px;
+	font:bold 20px Verdana;
+  background-color: #3d5c5c;
+  color: white;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.description{
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: solid 10px black;
+}
+.description h1{
+  color: white;
+}
