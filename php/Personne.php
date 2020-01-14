@@ -3,13 +3,10 @@
 
 class Personne
 {
-    private $nom = '';
-    private $prenom = '';
-    private $numTel = '';
+    public $nom = '';
+    public $prenom = '';
+    public $numTel = '';
 
-    function creerPersonne()
-    {
-
-    }
+    public function __construct() { }
 
 }
