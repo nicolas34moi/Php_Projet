@@ -25,13 +25,16 @@
     <input type="text" name="nomClient" value="">
     <button type="submit" class="btn btn-primary">Rechercher</button>
 </form>
-
+<td><a href="Maquette_Ajout_Client_Admin.php"><button type="button" class="btn btn-primary">Ajouter</button></a></td>
+<br>
+<br>
 <table  class="table table-striped">
     <thead class="thead-dark">
     <tr>
         <th scope="col">Nom</th>
         <th scope="col">Prénom</th>
         <th scope="col">N° de Téléphone</th>
+        <th scope="col"></th>
         <th scope="col"></th>
     </tr>
     </thead>
@@ -40,31 +43,40 @@
         <td scope="row">Bouchar</td>
         <td>Gérard</td>
         <td>0616263646</td>
-        <td><a href="Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Supp_Client_Admin.php"><button type="button" class="btn btn-primary">Supprimer</button></a></td>
     </tr>
     <tr>
         <td scope="row">Mendigot</td>
         <td>Gueusar</td>
         <td>0615253545</td>
-        <td><a href="Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Supp_Client_Admin.php"><button type="button" class="btn btn-primary">Supprimer</button></a></td>
+
     </tr>
     <tr>
         <td scope="row">Quomunyc</td>
         <td>Dominique</td>
         <td>0614243444</td>
-        <td><a href="Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Supp_Client_Admin.php"><button type="button" class="btn btn-primary">Supprimer</button></a></td>
+
     </tr>
     <tr>
         <td scope="row">Kipyk</td>
         <td>Clovis</td>
         <td>0717273747</td>
-        <td><a href="Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Supp_Client_Admin.php"><button type="button" class="btn btn-primary">Supprimer</button></a></td>
+
     </tr>
     <tr>
         <td scope="row">Tournevis</td>
         <td>Sonic</td>
         <td>07700 900461</td>
-        <td><a href="Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Modif_Client_Admin.php"><button type="button" class="btn btn-primary">Modifier</button></a></td>
+        <td><a href="Maquette_Supp_Client_Admin.php"><button type="button" class="btn btn-primary">Supprimer</button></a></td>
+
     </tr>
 
     </tbody>
@@ -73,7 +85,6 @@
 
 
 <footer>
-    <h1>Footer</h1>
 </footer>
 </body>
 </html>

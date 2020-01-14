@@ -15,7 +15,7 @@
 <body>
 <h1>Modifier un Client</h1>
 
-<form action="Liste_Client_Admin.php" method="post">
+<form action="Maquette_Liste_Client_Admin.php" method="post">
     <div class="form-group">
         <br>
         <label for="nom">Nom : </label>
