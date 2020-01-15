@@ -5,7 +5,7 @@ class Personne
 {
     public $nom = '';
     public $prenom = '';
-    public $numTel = '';
+    public $adresse = '';
 
     public function __construct() { }
 

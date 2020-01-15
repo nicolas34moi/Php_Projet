@@ -23,8 +23,7 @@ $nom = '';
 if (isset($_POST['nom'])) {
     $nom = htmlspecialchars($_POST['nom']);
 }
-var_dump($nom);
-var_dump($_POST['nom']);
+
 ?>
 <form action="" method="post" class="form-group">
     <label for="nom">Nom Client : </label>
