@@ -10,11 +10,14 @@ function getDataBase() {
     return $bdd;
 }
 
-function getAllClients(PDO $bdd) {
+function getAllClients(PDO $bdd, $noms) {
     $query = "SELECT * 
-              FROM clients ";
+              FROM clients 
+              WHERE nom LIKE :p_nom";
     $clients = null;
     $statement = $bdd->prepare($query);
+    $noms = $noms . '%';
+    $statement->bindParam(':p_nom', $noms);
 
     if ($statement->execute()) {
         $clients = $statement->fetchAll(PDO::FETCH_OBJ);
@@ -23,6 +26,7 @@ function getAllClients(PDO $bdd) {
     }
     return $clients;
 }
+
 
 
 
