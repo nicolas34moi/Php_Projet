@@ -19,14 +19,16 @@
     <h1>Hôtel Neptune</h1>
 </header>
 <?php
-$noms = '';
-if (isset($_POST['noms'])) {
-    $noms = htmlspecialchars($_POST['noms']);
+$nom = '';
+if (isset($_POST['nom'])) {
+    $nom = htmlspecialchars($_POST['nom']);
 }
+var_dump($nom);
+var_dump($_POST['nom']);
 ?>
 <form action="" method="post" class="form-group">
-    <label for="nomClient">Nom Client : </label>
-    <input type="text" name="nomClient" value="<?= $noms ?>">
+    <label for="nom">Nom Client : </label>
+    <input type="text" name="nom" value="<?= $nom ?>">
     <button type="submit" class="btn btn-primary">Rechercher</button>
 </form>
 
@@ -44,42 +46,33 @@ if (isset($_POST['noms'])) {
         <th scope="col">Adresse</th>
         <th scope="col"></th>
         <th scope="col"></th>
-
     </tr>
     </thead>
     <tbody>
-
-        <?php
-        require('fonctions.php');
-        $bdd = getDataBase();
-        $clients = null;
-        if ($bdd) {
-            $clients = getAllClients($bdd, $noms);
-            if ($clients) {
-                foreach ($clients as $client) {
-                    echo '<tr>'
-                        .'<td scope="row">' . $client->civilite . '</td>'
-                        . '<td>' . $client->nom . '</td>'
-                        . '<td>' . $client->prenom . '</td>'
-                        . '<td>' . $client->adresse . '</td>'
-                        . ' <td><a href="../HTML/Maquette_Modif_Client_Admin.php"?id=' . $client->id.'><button type="button" class="btn btn-primary">Modifier</button>
+    <?php
+    require('fonctions.php');
+    $bdd = getDataBase();
+    $clients = null;
+    if ($bdd) {
+        $clients = getAllClients($bdd, $nom);
+        if ($clients) {
+            foreach ($clients as $client) {
+                echo '<tr>'
+                    . '<td scope="row">' . $client->civilite . '</td>'
+                    . '<td>' . $client->nom . '</td>'
+                    . '<td>' . $client->prenom . '</td>'
+                    . '<td>' . $client->adresse . '</td>'
+                    . ' <td><a href="../HTML/Maquette_Modif_Client_Admin.php"?id=' . $client->id . '><button type="button" class="btn btn-primary">Modifier</button>
             </a></td>'
-                        .' <td><a href="../HTML/Maquette_Supp_Client_Admin.php"?id=' . $client->id.'><button type="button" class="btn btn-primary">Supprimer</button>
+                    . ' <td><a href="../HTML/Maquette_Supp_Client_Admin.php"?id=' . $client->id . '><button type="button" class="btn btn-primary">Supprimer</button>
             </a></td>'
-                        .'</tr>';
-        }
+                    . '</tr>';
             }
-
         }
-        ?>
-
-
-
+    }
+    ?>
     </tbody>
 </table>
 
-
-<footer>
-</footer>
 </body>
 </html>
