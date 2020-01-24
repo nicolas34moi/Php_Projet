@@ -15,9 +15,9 @@
 </head>
 <body>
 
-<header>
+
     <h1>Hôtel Neptune</h1>
-</header>
+
 <?php
 $nom = '';
 if (isset($_POST['nom'])) {
@@ -61,9 +61,9 @@ if (isset($_POST['nom'])) {
                     . '<td>' . $client->nom . '</td>'
                     . '<td>' . $client->prenom . '</td>'
                     . '<td>' . $client->adresse . '</td>'
-                    . ' <td><a href="../HTML/Maquette_Modif_Client_Admin.php"?id=' . $client->id . '><button type="button" class="btn btn-primary">Modifier</button>
+                    . ' <td><a href="ModifClientAd.php?id=' . $client->id . '"><button type="button" class="btn btn-primary">Modifier</button>
             </a></td>'
-                    . ' <td><a href="../HTML/Maquette_Supp_Client_Admin.php"?id=' . $client->id . '><button type="button" class="btn btn-primary">Supprimer</button>
+                    . ' <td><a href="../HTML/Maquette_Supp_Client_Admin.php?id=' . $client->id . '"><button type="button" class="btn btn-primary">Supprimer</button>
             </a></td>'
                     . '</tr>';
             }

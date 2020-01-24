@@ -43,4 +43,17 @@ function getAllRooms(PDO $bdd) {
     }
     return $rooms;
 }
-
+function getModifClient (PDO $bdd, $id) {
+    // Etape 2 : Obtention de l'éditeur depuis la BD
+    $query = "SELECT * FROM clients WHERE id=:p_id";
+    // Etape 2.1
+    $statement = $bdd->prepare($query);
+    // Etape 2.2
+    $statement->bindParam(':p_id', $id);
+    // Etape 2.3
+    if ($statement->execute()) {
+        // On récupère le publisher au format objet
+        $client = $statement->fetch(PDO::FETCH_OBJ);
+    }
+    return $client;
+}
