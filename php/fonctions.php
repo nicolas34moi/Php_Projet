@@ -57,3 +57,14 @@ function getModifClient (PDO $bdd, $id) {
     }
     return $client;
 }
+
+function getCountries(PDO $bdd){
+
+    $query = "SELECT * FROM pays";
+    $stmt = $bdd->prepare($query);
+    if ($stmt->execute()){
+        $pays = $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+    return $pays;
+
+}
