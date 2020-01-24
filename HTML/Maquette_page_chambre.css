@@ -104,6 +104,9 @@ color: white;
     transition: all 0.5s;
     cursor: pointer;
 }
+.modifier .button{
+  padding: 5px;
+}
 .description{
   text-align: center;
   margin-left: 50px;
@@ -112,4 +115,20 @@ color: white;
 }
 .description h1{
   color: white;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+  align-content: center;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+}
+h1{
+  text-align: center;
 }

@@ -3,17 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="maquette_page_chambre.css">
+    <link rel="stylesheet" href="Maquette_page_chambre.css">
   </head>
+  <?php
+  $prix ='200';
+  $description="Sèche-Cheveux
+Connexion internet avec ADSL
+Salle de bain avec douche
+Dispositif pour l'auto-échauffementet l'air conditionné
+Frigobar
+Ligne de téléphone directe
+Tv Satellitaire";
+  ?>
   <body>
     <div class="stickymain">
       <div class="sticky">
         <div class="logo">
           <a href="#"> <h1>Montpellier Sud Neptune</h1></a>
         </div>
-
+          <div class="admin">
+              <a href="Maquette_page_admin.php" class="button">
+              ADMINISTRATEUR </a>
         </div>
       </div>
+    </div>
     <div class="main">
     <div class="mySlides fade">
          <img src="images\image1.jpeg" class="backgrounddefilement1" >
@@ -35,7 +48,7 @@
     <div class="vente">
    <div id="menu">
      <div class="tarif_de_nuit">
-            <h1>200€ </h1>
+            <h1><?= $prix .'€' ?> </h1>
          <p>pour 1 chambre pour 1 nuit
              taxes et frais compris</p>
             </div>
@@ -46,13 +59,13 @@
        </div>
 
     <script>
-    var slideIndex = 0;
+        let slideIndex = 0;
     showSlides();
 
     function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
@@ -70,9 +83,9 @@
 
 <div class="description">
   <h1>description</h1>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+    <?= $description  ?>
 </div>
+
   <footer>
       <h1> FOOTER </h1>
   </footer>
