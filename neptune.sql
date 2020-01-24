@@ -262,7 +262,7 @@ INSERT INTO `pays` (`id`, `nom`) VALUES
 --
 
 CREATE TABLE `planning` (
-  `chambre_id` char(2) NOT NULL,
+  `chambre_id` int(2) NOT NULL,
   `jour` datetime NOT NULL,
   `reservation` int(11) NOT NULL DEFAULT '0',
   `paye` int(11) NOT NULL DEFAULT '0',
@@ -594,6 +594,7 @@ ALTER TABLE `pays`
 ALTER TABLE `planning`
   ADD PRIMARY KEY (`chambre_id`,`jour`,`client_id`);
 
+
 --
 -- Index pour la table `tarifs`
 --
@@ -624,6 +625,23 @@ ALTER TABLE `pays`
 --
 ALTER TABLE `tarifs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  
+  ALTER table `planning`
+  	ADD CONSTRAINT FK_Client
+	FOREIGN KEY (client_id) REFERENCES clients(id);
+    
+      ALTER table `planning`
+    ADD CONSTRAINT FK_Chambre
+    FOREIGN KEY (chambre_id) REFERENCES chambres(numero);
+    
+     ALTER table `chambres`
+  	ADD CONSTRAINT FK_Tarifs
+	FOREIGN KEY (tarif_id) REFERENCES tarifs(id);
+    
+     ALTER table `clients`
+  	ADD CONSTRAINT FK_Pays
+	FOREIGN KEY (pays_id) REFERENCES pays(id);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
