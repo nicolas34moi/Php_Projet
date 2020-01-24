@@ -63,7 +63,7 @@ if (isset($_POST['nom'])) {
                     . '<td>' . $client->adresse . '</td>'
                     . ' <td><a href="ModifClientAd.php?id=' . $client->id . '"><button type="button" class="btn btn-primary">Modifier</button>
             </a></td>'
-                    . ' <td><a href="../HTML/Maquette_Supp_Client_Admin.php?id=' . $client->id . '"><button type="button" class="btn btn-primary">Supprimer</button>
+                    . ' <td><a href="SuppClientAd.php?id=' . $client->id . '"><button type="button" class="btn btn-primary">Supprimer</button>
             </a></td>'
                     . '</tr>';
             }

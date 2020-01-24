@@ -28,16 +28,16 @@ if ($client ==null){
 }else {
     ?>
 
-    <form action="updateClient.php" method="post">
+    <form action="deleteClient.php" method="post">
         <div class="form-group">
             <label for="civ">Civilité : </label>
-            <input type="text" name="civ" value="<?=$client->civilite?>">
+            <input type="text" name="civ" disabled value="<?=$client->civilite?>">
             <label for="nom">Nom : </label>
-            <input type="text" name="nom" value="<?=$client->nom?>">
+            <input type="text" name="nom" disabled value="<?=$client->nom?>">
             <label for="prenom">Prénom : </label>
-            <input type="text" name="prenom" value="<?=$client->prenom?>">
+            <input type="text" name="prenom" disabled value="<?=$client->prenom?>">
             <label for="adresse">Adresse : </label>
-            <input type="text" name="adresse" value="<?=$client->adresse?>">
+            <input type="text" name="adresse" disabled value="<?=$client->adresse?>">
             <input type="hidden" name="id" value="<?=$client->id?>">
             <button type="submit" class="btn btn-primary">Valider</button>
         </div>
