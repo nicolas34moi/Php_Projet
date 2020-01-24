@@ -31,7 +31,7 @@ if (isset($_POST['nom'])) {
     <button type="submit" class="btn btn-primary">Rechercher</button>
 </form>
 
-<a href="../HTML/Maquette_Ajout_Client_Admin.php">
+<a href="AjouterClientAd.php">
     <button type="button" class="btn btn-primary">Ajouter</button>
 </a>
 <br>
